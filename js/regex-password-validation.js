@@ -15,7 +15,7 @@
 /*                    ANSWER                    */
 /* -------------------------------------------- */
 function regexp(password) {
-    let strongRegex = new RegExp("^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,})");
+    let strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,})");
     let alphanumeric = /^[a-z0-9]+$/i
 
     if(strongRegex.test(password)){
